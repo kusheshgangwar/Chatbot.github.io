@@ -60,8 +60,9 @@ body {
       <button id="send-btn" type="submit">Send</button>
     </form>
   </div>
-
-  <script src="script.js" defer>const form = document.getElementById('chat-form');
+</body>
+  <script>
+  const form = document.getElementById('chat-form');
 const input = document.getElementById('user-input');
 const list = document.getElementById('messages');
 const sendBtn = document.getElementById('send-btn');
@@ -160,5 +161,4 @@ app.post('/api/chat', async (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running http://localhost:${PORT}`));
 </script>
-</body>
 </html>
